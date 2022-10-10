@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    height: 30px;
+}
+
+.navbar div {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.gameContainer {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.gridContainer div {
+    border: 2px solid black;
+}
+
+.container {
+    margin: 120px;
+}
+
+.welcome {
+    transition: transform .2s;
+
+}
+
+.welcome:hover {
+    transform: scale(1.5);
+    font-weight: bolder;
+    color: rgb(54, 52, 52);
+}
+
+
+@media screen and (max-width: 825px) {
+    .gameContainer {
+        flex-wrap: wrap;
+
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 25vw);
+        grid-template-rows: repeat(3, 25vw);
+    }
+}
+
+.boxtext {
+
+    font-size: 100px;
+}
+
+.btn {
+    margin: 2px;
+    padding: 5px 25px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+    font-weight: bolder;
+    margin: 2px;
+    padding: 5px 25px;
+    border: 2px solid rgb(245, 3, 3);
+    background-color: red;
+    color: black;
+    border-radius: 9px;
+    cursor: pointer;
+}
